@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete CSS Cheat Sheet</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+    background-color: #1f1d1d;
+    color: white;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+header h1 {
+  margin-bottom: 0.2em;
+}
+
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-section {
+  margin-bottom: 1.5em;
+}
+
+.property-section h3 {
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+.property-section ul {
+  list-style: disc inside;
+  padding-left: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;       
+  color: #fff;
+}
+
+button{
+    padding: 8px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+}
+.x{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: rgb(118, 5, 5);
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(rgba(255, 255, 255, 0.379));
+    padding: 8px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="x">X</a>
+    <h1>CSS Cheat Sheet</h1>
+    <p>Your complete guide to CSS properties</p>
+  </header>
+
+  <main>
+    <section id="css-essentials">
+      <h2>CSS</h2>
+
+      <div class="property-section">
+        <h3>Background Properties</h3>
+        <ul>
+          <li><strong>background-attachment:</strong> Controls the background scroll behavior. Options: `scroll`, `fixed`.</li>
+          <li><strong>background-color:</strong> Sets the background color (e.g., `#fff` or `transparent`).</li>
+          <li><strong>background-image:</strong> Specifies an image to use as the background (e.g., `url('image.jpg')`).</li>
+          <li><strong>background-position:</strong> Sets the starting position of the background (e.g., `center`, `top right`).</li>
+          <li><strong>background-size:</strong> Controls the size of the background image (e.g., `cover`, `contain`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Border Properties</h3>
+        <ul>
+          <li><strong>border:</strong> Shorthand to set border width, style, and color.</li>
+          <li><strong>border-width:</strong> Defines the width of the border (e.g., `thin`, `medium`, `thick`).</li>
+          <li><strong>border-color:</strong> Sets the color of the border.</li>
+          <li><strong>border-style:</strong> Specifies the style (e.g., `solid`, `dotted`, `dashed`).</li>
+          <li><strong>border-radius:</strong> Adds rounded corners (e.g., `5px`, `50%`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Box Model Properties</h3>
+        <ul>
+          <li><strong>margin:</strong> Sets the outer spacing of the element (e.g., `margin: 10px 20px;`).</li>
+          <li><strong>padding:</strong> Sets the inner spacing of the element (e.g., `padding: 15px;`).</li>
+          <li><strong>width:</strong> Defines the width of the element.</li>
+          <li><strong>height:</strong> Defines the height of the element.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Font Properties</h3>
+        <ul>
+          <li><strong>font-family:</strong> Sets the font type for text (e.g., `Arial, sans-serif`).</li>
+          <li><strong>font-size:</strong> Defines the size of the font (e.g., `16px`, `1em`).</li>
+          <li><strong>font-weight:</strong> Controls the boldness (e.g., `normal`, `bold`, `100` to `900`).</li>
+          <li><strong>font-style:</strong> Applies a style like `italic` or `normal` to the font.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Color Properties</h3>
+        <ul>
+          <li><strong>color:</strong> Sets the text color (e.g., `#333`, `rgb(0,0,0)`).</li>
+          <li><strong>opacity:</strong> Defines the opacity/transparency level (e.g., `0` for transparent to `1` for opaque).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Text Properties</h3>
+        <ul>
+          <li><strong>text-align:</strong> Aligns text horizontally (e.g., `left`, `center`, `right`).</li>
+          <li><strong>text-decoration:</strong> Adds decoration like `underline`, `overline`, or `line-through`.</li>
+          <li><strong>text-transform:</strong> Transforms text to `uppercase`, `lowercase`, or `capitalize`.</li>
+          <li><strong>text-shadow:</strong> Adds a shadow effect to the text (e.g., `1px 1px 2px #000`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Transition Properties</h3>
+        <ul>
+          <li><strong>transition-property:</strong> Specifies which properties to animate (e.g., `all`, `opacity`).</li>
+          <li><strong>transition-duration:</strong> Defines how long the transition lasts (e.g., `0.5s`).</li>
+          <li><strong>transition-timing-function:</strong> Controls the speed curve (e.g., `ease`, `linear`).</li>
+          <li><strong>transition-delay:</strong> Adds a delay before the transition starts.</li>
+        </ul>
+      </div>
+      
+      <!-- Add additional sections as needed from the PDF -->
+    </section>
+  </main>
+
+  <main>
+    <!-- Section for WebKit CSS3 content -->
+    <section id="webkit-css3">
+      <h2>WebKit CSS3 Essentials</h2>
+
+      <div class="property-section">
+        <h3>Selectors</h3>
+        <ul>
+          <li><strong>El[att^="val"]:</strong> Matches attribute values beginning with "val".</li>
+          <li><strong>El[att$="val"]:</strong> Matches attribute values ending with "val".</li>
+          <li><strong>El[att*="val"]:</strong> Matches attribute values containing the substring "val".</li>
+          <li><strong>El:not(s):</strong> Selects elements that are not of type "s".</li>
+          <li><strong>El:nth-child(n):</strong> Selects the nth child element of its parent.</li>
+          <li><strong>El:target:</strong> Selects the element targeted by a URL hash.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Flexible Box Model</h3>
+        <p>Used to create flexible box layouts (HBox and VBox).</p>
+        <ul>
+          <li><strong>display:</strong> `-webkit-box;`</li>
+          <li><strong>-webkit-box-orient:</strong> Sets orientation: `horizontal | vertical`.</li>
+          <li><strong>-webkit-box-flex:</strong> Defines flex grow factor, e.g., `1`.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Box Sizing</h3>
+        <p>Defines box-sizing options with padding and border inside the box.</p>
+        <ul>
+          <li><strong>-webkit-box-sizing:</strong> Sets box sizing to `content-box | border-box`.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Multiple Columns</h3>
+        <p>Creates newspaper-style columns for text layout.</p>
+        <ul>
+          <li><strong>-webkit-columns:</strong> Shorthand for column properties.</li>
+          <li><strong>-webkit-column-width:</strong> Sets the width of each column.</li>
+          <li><strong>-webkit-column-count:</strong> Specifies the number of columns.</li>
+          <li><strong>-webkit-column-gap:</strong> Defines the space (gutter) between columns.</li>
+          <li><strong>-webkit-column-rule:</strong> Specifies a divider line between columns.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>RGBA Colors</h3>
+        <p>Defines colors with transparency using RGBA values.</p>
+        <ul>
+          <li><strong>rgba(0-255, 0-255, 0-255, 0-1):</strong> Color values with red, green, blue, and alpha (transparency) settings.</li>
+          <li><strong>Example:</strong> `color: rgba(255,255,255,0.8);`</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Border Radius</h3>
+        <ul>
+          <li><strong>-webkit-border-radius:</strong> Sets rounded corners for all corners (e.g., `4px`).</li>
+          <li><strong>-webkit-border-top-left-radius:</strong> Sets the radius for a specific corner.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Multiple Backgrounds</h3>
+        <p>Allows multiple background images on a single element.</p>
+        <ul>
+          <li><strong>background:</strong> `url(image1) repeat, url(image2) no-repeat;`</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Marquee</h3>
+        <p>Creates scrolling text across the screen.</p>
+        <ul>
+          <li><strong>-webkit-marquee:</strong> Shorthand to set marquee properties.</li>
+          <li><strong>overflow-x:</strong> `-webkit-marquee;`</li>
+          <li><strong>-webkit-marquee-direction:</strong> Direction (e.g., `left`, `right`, `reverse`).</li>
+          <li><strong>-webkit-marquee-repetition:</strong> Number of repetitions or `infinite`.</li>
+          <li><strong>-webkit-marquee-style:</strong> Scrolling style (e.g., `scroll`, `alternate`, `none`).</li>
+          <li><strong>-webkit-marquee-speed:</strong> Speed of marquee (`fast`, `normal`, `slow`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Shadows</h3>
+        <ul>
+          <li><strong>box-shadow:</strong> Adds shadow to boxes (e.g., `x-offset y-offset blur color`).</li>
+          <li><strong>text-shadow:</strong> Adds shadow to text (e.g., `0 1px 5px rgba(0,0,0,0.3);`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Animations</h3>
+        <p>Defines animations for elements using WebKit keyframes.</p>
+        <ul>
+          <li><strong>-webkit-animation-name:</strong> Name of the animation keyframe.</li>
+          <li><strong>-webkit-animation-duration:</strong> Duration of the animation in seconds.</li>
+          <li><strong>-webkit-animation-timing-function:</strong> Speed curve (e.g., `ease-in`, `linear`).</li>
+          <li><strong>-webkit-animation-delay:</strong> Delay before the animation starts.</li>
+          <li><strong>-webkit-animation-iteration-count:</strong> Number of repetitions or `infinite`.</li>
+          <li><strong>@-webkit-keyframes:</strong> Defines keyframes for animation steps.</li>
+          <li><strong>Example:</strong>
+            <pre>
+@-webkit-keyframes colorShift {
+  0%   { background-color: red; }
+  100% { background-color: blue; }
+}
+#myDiv { -webkit-animation: colorShift 10s linear; }
+            </pre>
+          </li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Transitions</h3>
+        <ul>
+          <li><strong>-webkit-transition:</strong> Shorthand for transition effects (e.g., `opacity 1s linear`).</li>
+          <li><strong>-webkit-transition-property:</strong> Property to transition (e.g., `all`).</li>
+          <li><strong>-webkit-transition-duration:</strong> Duration in seconds.</li>
+          <li><strong>-webkit-transition-timing-function:</strong> Speed curve (`linear`, `ease-in`, `ease-out`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Gradients</h3>
+        <p>Defines gradient backgrounds with multiple color stops.</p>
+        <ul>
+          <li><strong>-webkit-gradient:</strong> Specifies gradient type and color stops.</li>
+          <li><strong>Example:</strong>
+            <pre>
+-webkit-gradient(
+  linear, 
+  0 0, 
+  0 100%, 
+  from(red), color-stop(0.5, green), to(blue)
+);
+            </pre>
+          </li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Background Size</h3>
+        <ul>
+          <li><strong>-webkit-background-size:</strong> Sets the size of background images (`length_x length_y`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Text Size Adjust</h3>
+        <ul>
+          <li><strong>-webkit-text-size-adjust:</strong> Controls text size scaling (`percentage`, `auto`, `none`).</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Text Overflow</h3>
+        <ul>
+          <li><strong>text-overflow:</strong> Defines how overflowed text is displayed (e.g., `ellipsis`).</li>
+          <li><strong>overflow:</strong> Needs `hidden` for text-overflow to work.</li>
+          <li><strong>white-space:</strong> Needs `nowrap` for overflow.</li>
+        </ul>
+      </div>
+
+      <div class="property-section">
+        <h3>Font Face</h3>
+        <p>Allows custom fonts in CSS.</p>
+        <ul>
+          <li><strong>@font-face:</strong> Defines a custom font.</li>
+          <li><strong>Example:</strong>
+            <pre>
+@font-face {
+  font-family: 'MyFont';
+  src: url('MyFont.file');
+}
+            </pre>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2024 CSS Cheat Sheets & WebKit CSS3 Cheat Sheet</p>
+    <a href="index.html"><button>Back</button></a>
+  </footer>
+</body>
+</html>
